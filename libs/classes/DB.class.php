@@ -19,10 +19,10 @@ $mysqli->query('SET NAMES utf8');
 $mysqli->query('SET CHARACTER SET utf8');  
 $mysqli->query('SET COLLATION_CONNECTION="utf8_general_ci"');
 */
-class DB{ 
-    const HOST = "localhost";
-    const USER = "u0096_artside";
-    const PASS = "ghV8k16#";
+class DB{
+    const HOST = "u0096264.plsk.regruhosting.ru";
+    const USER = "u0096_devsite";
+    const PASS = "z1fO7e~7";
     private static $_database;
 
     public static $mysqli;

@@ -22,11 +22,11 @@
                 <i class="icon-folder"></i><a href="#">Каталог товаров</a> <i class="icon-arrow-down"></i>
             </nav>
             <article id="offer">
-                <img src="/skins/img/main-banner.jpg" alt="Выпускаем снаряжение с 1998 года" />
+                <img src="./skins/img/main-banner.jpg" alt="Выпускаем снаряжение с 1998 года" />
                 
             </article>
             <article id="offer-mobile">
-                <img src="/skins/img/main-banner-mobile.jpg" alt="Выпускаем снаряжение с 1998 года" />
+                <img src="./skins/img/main-banner-mobile.jpg" alt="Выпускаем снаряжение с 1998 года" />
                 
             </article>
             <div class="grid-row">
@@ -55,10 +55,10 @@
             <?php include AS_GENERAL_FOOTER; ?>
         </div>
         <?php include AS_GENERAL_MODAL_DIALOG; ?>
-        <link rel="stylesheet" href="/skins/css/styles.css">
+        <link rel="stylesheet" href="./skins/css/styles.css">
         <script src="https://yastatic.net/jquery/2.2.0/jquery.min.js"></script>
-        <script src="/skins/js/libs/jquery.swipebox.js"></script>
-        <script src="/skins/js/core.js"></script>
+        <script src="./skins/js/libs/jquery.swipebox.js"></script>
+        <script src="./skins/js/core.js"></script>
         <?php $xajax->printJavascript(); ?>
     </body>
 </html>

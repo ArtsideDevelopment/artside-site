@@ -29,7 +29,7 @@
     </nav>
     <div class="grid-3">  
         <div id="logo-bottom">
-            <img src="/skins/img/logo_bottom.jpg" alt="ПИК-99. Производство тур снаряжения" />
+            <img src="./skins/img/logo_bottom.jpg" alt="ПИК-99. Производство тур снаряжения" />
         </div>
         <div id="social-links">
             <a href="https://vk.com/" target="_blank" class="icon-social-vkontakte"></a>

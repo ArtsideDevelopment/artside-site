@@ -26,9 +26,9 @@ if(!defined('AS_KEY'))
 * Establishes a path to a script root for HTTP 
 * Устанавливает путь до корневой директории скрипта 
 * по протоколу HTTP 
-*/  
-    define('AS_HOST', 'http://'. $_SERVER['HTTP_HOST'] .'/');
-    define('AS_HOST_CRM', 'http://crm.pk-99.u0096264.plsk.regruhosting.ru/');
+*/
+define('AS_HOST', 'http://'. $_SERVER['HTTP_HOST'] .'/');
+define('AS_HOST_CRM', 'http://artside-erp.u0096264.plsk.regruhosting.ru/');
     
 /** 
 * Establishes domain host without http://
@@ -39,8 +39,8 @@ if(!defined('AS_KEY'))
 /** 
 * Establishes a physical path to a root directory of a script 
 * Устанавливает физический путь до корневой директории скрипта 
-*/  
-    define('AS_ROOT', str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']) .'/');
+*/
+define('AS_ROOT', str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']) ."/artside-site".'/');
      
 /*----------------------------------------------------------- 
 *                   CONNECTION ADDITIONAL DB 
@@ -55,8 +55,8 @@ if(!defined('AS_KEY'))
   /** 
    * Example for connection additional database 
    * Пример подключения дополнительной базы 
-   */  
-   define('AS_DATABASE', 'u0096264_pk_99');     
+   */
+define('AS_DATABASE', 'u0096264_artside_site');
 /** 
 * Establishes a company name 
 * Устанавливает название кампании
@@ -72,14 +72,14 @@ if(!defined('AS_KEY'))
 /** 
 * Establishes a system product img path
 * Устанавливает путь к изображениям товара
-*/  
-    define('AS_PRODUCT_IMG_PATH', 'http://crm.pk-99.u0096264.plsk.regruhosting.ru'); 
+*/
+define('AS_PRODUCT_IMG_PATH', 'http://artside-erp.u0096264.plsk.regruhosting.ru/');;
     
 /** 
 * Establishes a system categories img path
 * Устанавливает путь к изображениям категорий
-*/  
-    define('AS_PRODUCT_CATEGORY_PATH', 'http://crm.pk-99.u0096264.plsk.regruhosting.ru/uploads/images/categories/'); 
+*/
+define('AS_PRODUCT_CATEGORY_PATH', 'http://artside-erp.u0096264.plsk.regruhosting.ru/uploads/images/categories/');
 
 
     

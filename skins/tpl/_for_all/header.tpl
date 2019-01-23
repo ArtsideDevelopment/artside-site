@@ -6,10 +6,10 @@
             <div class="three"></div>
         </div>                    
         <div id="logo">
-            <img src="/skins/img/pik_logo.gif" alt="ПИК-99. Производство тур снаряжения" />
+            <img src="./skins/img/pik_logo.gif" alt="ПИК-99. Производство тур снаряжения" />
         </div>
         <div id="logo-mobile">
-            <img src="/skins/img/pik-logo-mobile.png" alt="ПИК-99. Производство тур снаряжения" />
+            <img src="./skins/img/pik-logo-mobile.png" alt="ПИК-99. Производство тур снаряжения" />
         </div>
         <a href="/cart" id="cart-btn" class="button">Перейти в корзину</a>
         <a id="cart">
