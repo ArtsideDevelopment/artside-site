@@ -65,7 +65,7 @@ body {
   font-family: 'Thasadith', sans-serif; }
 
 .reg-wrap {
-  background-image: url('../skins/img/backgrounds/background_for_reg.jpg');
+  background-image: url('../../img/backgrounds/background_for_reg.jpg');
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

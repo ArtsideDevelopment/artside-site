@@ -12,6 +12,7 @@
             <img src="./skins/img/pik-logo-mobile.png" alt="ПИК-99. Производство тур снаряжения" />
         </div>
         <a href="/cart" id="cart-btn" class="button">Перейти в корзину</a>
+        <a href="artside-site/auth/view" id="reg-btn" class="button">Авторизоваться</a>
         <a id="cart">
             <div>Корзина (<span id="cart_amount"><?php echo $CART['num'];?></span>)</div>
             <div><span id="cart_sum"><?php echo $CART['sum'];?></span> р.</div> 

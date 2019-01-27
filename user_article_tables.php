@@ -23,7 +23,7 @@ function createUserTable(String $dataBase) {
                   id int(5)unsigned auto_increment primary key,
                   name varchar(30) not null,
                   email varchar(50) not null,
-                  password varchar(255))";
+                  password varchar(255) not null)";
             $connection->query($query);
             $connection->close();
         }
@@ -53,7 +53,7 @@ function createArticleTable(String $dataBase) {
                   id int(5)unsigned auto_increment primary key,
                   title varchar(255) not null,
                   content text not null,
-                  user_id int(5) unsigned); 
+                  user_id int(5) unsigned not null); 
                   
                   alter table '" . AS_DBPREFIX . "articles'
                   add foreign key (user_id) references " . AS_DBPREFIX . "users(id)";
@@ -62,3 +62,4 @@ function createArticleTable(String $dataBase) {
         }
     }
 }
+

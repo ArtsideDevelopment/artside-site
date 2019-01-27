@@ -21,7 +21,13 @@ function autoloadClass ($className) {
         'ExceptionDataBase' => AS_ROOT . 'libs/classes/ExceptionDataBase.class.php', 
         'xajax' => AS_ROOT . 'libs/xajax/xajax_core/xajax.inc.php',
         'Enum' => AS_ROOT . 'libs/classes/enums/Enum.class.php',
-        'DialogMsg' => AS_ROOT . 'libs/classes/enums/DialogMsg.class.php'       
+        'DialogMsg' => AS_ROOT . 'libs/classes/enums/DialogMsg.class.php',
+        'Debug' => AS_ROOT . 'libs/classes/Debug.php',
+        'BlogController' => AS_ROOT . 'libs/classes/BlogController.php',
+        'Render' => AS_ROOT . 'libs/classes/Render.php',
+        'BlogRouter' => AS_ROOT . 'libs/classes/BlogRouter.php',
+        'AuthController' => AS_ROOT . 'libs/classes/AuthController.php',
+        'RegController' => AS_ROOT . 'libs/classes/RegController.php'
     );
     include $map[$className];
 }

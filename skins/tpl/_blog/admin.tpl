@@ -4,19 +4,19 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel = "stylesheet" href = "../skins/css/blog/app.css">
+    <link rel = "stylesheet" href = "../../skins/css/blog/app.css">
 </head>
 <body>
 <div class = "wrap">
     <aside>
         <div class = "aside__header">
             <div class = "header__logo">
-                <img src = "../skins/img/backgrounds/logo.png" alt = "logo">
+                <img src = "../../skins/img/backgrounds/logo.png" alt = "logo">
             </div>
             <span>Mercury</span>
         </div>
         <ul>
-            <li><img src="../skins/img/backgrounds/home_logo.png" alt="logo">Home</li>
+            <li><img src="../../skins/img/backgrounds/home_logo.png" alt="logo">Home</li>
         </ul>
     </aside>
     <main>
@@ -41,9 +41,9 @@
 
     </main>
 </div>
-<script src = "../skins/js/blog/btn_burger.js"></script>
-<script src = "../skins/js/blog/app.js"></script>
-<script src = "../skins/js/blog/modal_window.js"></script>
+<script src = "../../skins/js/blog/btn_burger.js"></script>
+<script src = "../../skins/js/blog/app.js"></script>
+<script src = "../../skins/js/blog/modal_window.js"></script>
 
 </body>
 </html>

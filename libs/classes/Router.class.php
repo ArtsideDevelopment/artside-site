@@ -96,7 +96,7 @@ class Router{
             $ef->HandleExeption();
             self::routeErrorPage404();
         } 
-        //include AS_ROOT .'skins/tpl/'.self::$_controller.'/index.tpl';
+        //include AS_ROOT .'skins/tpl/'.self::$_controller.'/admin.tpl';
         return $content;
     }    
     /** 

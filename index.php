@@ -55,20 +55,24 @@
     $xajax->processRequest();
 $xajax->configure('javascript URI',AS_HOST.'/artside-site/libs/xajax');
 
-include "blog.php";
-
-/**  
-* We connect a file of routing functions  
-* Подключаем файл маршрутизации 
-*/      
+$query = explode("/", $_SERVER["QUERY_STRING"]);
+if (count($query) > 1) {
+   BlogRouter::dispatch($query);
+}else{
     $content = Router::startRoute();
+    /**
+     * We connect a file of routing functions
+     * Подключаем файл маршрутизации
+     */
+//    $content = Router::startRoute();
     //$content = Router::startRoute('modules',$PAGE->getController());
     //$controller = Router::getController();
     //dbg($controller);
-/**  
-* We connect a file of initialization of variables  
-* Подключаем файл инициализации переменных  
-*/     
-    include AS_ROOT .'libs/variables.php'; 
+    /**
+     * We connect a file of initialization of variables
+     * Подключаем файл инициализации переменных
+     */
+    include AS_ROOT .'libs/variables.php';
 
     include AS_ROOT .'skins/tpl/'.  Router::getView().'/index.tpl';
+}

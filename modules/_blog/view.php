@@ -6,4 +6,4 @@
 * @author Dulebsky A. 14.06.2015   
 * @copyright © 2015 ArtSide 
 */ 
-    include AS_ROOT.'skins/tpl/_blog/index.tpl';
+    include AS_ROOT.'skins/tpl/_blog/blog.tpl';

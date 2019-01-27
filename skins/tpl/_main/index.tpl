@@ -31,7 +31,7 @@
                     <div class="block-header">ПРОДУКЦИЯ</div>
                     <nav class="left-menu">
                         <a href="/catalog" class="button">Каталог товаров</a>
-                        <a href="artside-site/blog" class="button">BLOG</a>
+                        <a href="artside-site/blog/view" class="button">BLOG</a>
                         <? echo $PAGE->getLeftMenu();?>
         <!--
                         <ul>
