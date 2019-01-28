@@ -6,58 +6,58 @@
 * @author ArtSide Dulebsky A. 14.06.2015   
 * @copyright © 2015 ArtSide   
 */
-/**   
-* We establish the charset and level of errors   
-* Устанавливаем кодировку и уровень ошибок   
-*/   
+/**
+* We establish the charset and level of errors
+* Устанавливаем кодировку и уровень ошибок
+*/
     header("Content-Type: text/html; charset=utf-8");
     error_reporting(E_ALL);
-/**   
-* Installation of a key of access to files   
-* Установка ключа доступа к файлам   
-*/ 
+/**
+* Installation of a key of access to files
+* Установка ключа доступа к файлам
+*/
     define('AS_KEY', true);
-/**  
-* We connect a configuration file  
-* Подключаем конфигурационный файл  
-*/ 
+/**
+* We connect a configuration file
+* Подключаем конфигурационный файл
+*/
     require_once('./config.php');
-/**  
-* We connect a file of autoload function 
+/**
+* We connect a file of autoload function
 * Подключаем файл с автооматической загрузкой классов
-*/      
-    include AS_ROOT .'libs/autoload.php'; 
-/**   
-* We connect exeptions file     
+*/
+    include AS_ROOT .'libs/autoload.php';
+/**
+* We connect exeptions file
 * Подключаем файл исключений
-*/      
+*/
     include_once AS_ROOT .'libs/exceptions.php';
-/**    
-* Debug    
-* Дебаггер   
-* @TODO To clean in release   
-*/ 
+/**
+* Debug
+* Дебаггер
+* @TODO To clean in release
+*/
     define('AS_TRACE', true);
-    require_once(AS_ROOT.'libs/debug.php'); 
-/**  
-* We connect a file of sequriy functions  
+    require_once(AS_ROOT.'libs/debug.php');
+/**
+* We connect a file of sequriy functions
 * Подключаем файл функции безопасности
-*/      
+*/
     include AS_ROOT .'libs/security.php';
-    
-/**   
-    * We connect a file of the xajax lib   
-    * Подключаем файл xajax библиотеки  
-    */        
-    $xajax = new xajax();	
-    require_once(AS_ROOT .'libs/xajax/xajax_for_all_func_inc.php'); 
+
+/**
+    * We connect a file of the xajax lib
+    * Подключаем файл xajax библиотеки
+    */
+    $xajax = new xajax();
+    require_once(AS_ROOT .'libs/xajax/xajax_for_all_func_inc.php');
     require_once(AS_ROOT .'libs/xajax/xajax_cart_func_inc.php');
     $xajax->processRequest();
 $xajax->configure('javascript URI',AS_HOST.'/artside-site/libs/xajax');
 
 $query = explode("/", $_SERVER["QUERY_STRING"]);
 if (count($query) > 1) {
-   BlogRouter::dispatch($query);
+    BlogRouter::dispatch($query);
 }else{
     $content = Router::startRoute();
     /**

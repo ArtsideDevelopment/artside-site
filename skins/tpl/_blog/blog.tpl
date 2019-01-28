@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class = "wrap">
-
+    <a href="/artside-site/auth/view/" id="reg-btn" class="button">Авторизоваться</a>
     <main>
         <div class = "main__header">
             <div class = "main__header__nav">

@@ -23,17 +23,25 @@
         <div class = "reg-body">
             <form class = "reg-form form">
                 <span>Welcome, dear friend!</span>
-                <label class = "name"><input type = "text" placeholder = "Your name"></label>
-                <label class = "last_name"><input type = "text" placeholder = "Your email"></label>
-                <label class = "password"><input type = "password" placeholder = "Password"></label>
-                <label class = "repeat password"><input type = "password" placeholder = "Repeat password"></label>
+                <label class = "name">
+                    <input name = "name" type = "text" placeholder = "Your name">
+                </label>
+                <label class = "email">
+                    <input name = "email" type = "text" placeholder = "Your email">
+                </label>
+                <label class = "password">
+                    <input name = "password" type = "password" placeholder = "Password">
+                </label>
+                <label class = "repeat_password">
+                    <input name = "repeat_password" type = "password" placeholder = "Repeat password">
+                </label>
                 <div class = "reg-footer">
-                    <button id="reg" type = "submit">Enter</button>
+                    <button id = "register" type = "submit">Enter</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<script src= "../../skins/js/blog/reg.js"></script>
+<script src = "../../skins/js/blog/reg.js"></script>
 </body>
 </html>

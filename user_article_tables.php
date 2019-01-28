@@ -1,34 +1,6 @@
 <?php
 
 
-/**
- * Функция создания талицы users.
- * hint: Будет использована при регистрации пользователя.
- * @param String $dataBase
- */
-function createUserTable(String $dataBase) {
-
-    $connection = new mysqli(
-        DB::HOST,
-        DB::USER,
-        DB::PASS,
-        $dataBase);
-
-    if (!$connection) {
-        die("Ошибка подключения к базе данных");
-    } else {
-        $query = ("show tables like '" . AS_DBPREFIX . "users'");
-        if (($connection->query($query))->num_rows === 0) {
-            $query = "create table " . AS_DBPREFIX . "users(
-                  id int(5)unsigned auto_increment primary key,
-                  name varchar(30) not null,
-                  email varchar(50) not null,
-                  password varchar(255) not null)";
-            $connection->query($query);
-            $connection->close();
-        }
-    }
-}
 
 
 /**

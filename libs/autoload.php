@@ -27,7 +27,8 @@ function autoloadClass ($className) {
         'Render' => AS_ROOT . 'libs/classes/Render.php',
         'BlogRouter' => AS_ROOT . 'libs/classes/BlogRouter.php',
         'AuthController' => AS_ROOT . 'libs/classes/AuthController.php',
-        'RegController' => AS_ROOT . 'libs/classes/RegController.php'
+        'RegistrationController' => AS_ROOT . 'libs/classes/RegistrationController.php',
+        'User' => AS_ROOT . 'libs/classes/models/User.php'
     );
     include $map[$className];
 }

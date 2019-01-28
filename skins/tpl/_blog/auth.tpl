@@ -16,21 +16,26 @@
             <span>Mercury</span>
             <div class = "wrap-ul">
                 <ul>
-                    <li><a href = "/artside-site/reg/view/">Register</a></li>
+                    <li><a href = "/artside-site/registration/view/">Register</a></li>
                 </ul>
             </div>
         </div>
         <div class = "reg-body">
-            <div class = "form">
+            <form class = "auth-form form">
                 <span>Welcome!</span>
-                <label class = "login"><input type = "text" placeholder = "Username"></label>
-                <label class = "password"><input type = "password" placeholder = "Password"></label>
-            </div>
-        </div>
-        <div class = "reg-footer">
-            <button type = "submit">Enter</button>
+                <label class = "login">
+                    <input name = "email" type = "text" placeholder = "email">
+                </label>
+                <label class = "password">
+                    <input name = "password" type = "password" placeholder = "Password">
+                </label>
+                <div class = "reg-footer">
+                    <button id="auth" type = "submit">Enter</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+<script src = "../../skins/js/blog/auth.js"></script>
 </body>
 </html>
