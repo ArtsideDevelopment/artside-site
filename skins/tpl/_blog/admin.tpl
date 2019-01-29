@@ -16,28 +16,31 @@
             <span>Mercury</span>
         </div>
         <ul>
-            <li><img src="../../skins/img/backgrounds/home_logo.png" alt="logo">Home</li>
+            <li><img src = "../../skins/img/backgrounds/home_logo.png" alt = "logo">Home</li>
         </ul>
     </aside>
     <main>
-        <div class="main__header">
-            <div class="main__header__btn-burger">
+        <div class = "main__header">
+            <div class = "main__header__btn-burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="main__header__nav">
-                <button class="main__header__nav__button" type="submit">+ Add project</button>
-                <div class="profile">Alexey</div>
-                <div class="modal">
+            <div class = "main__header__nav">
+                <button class = "main__header__nav__button" type = "submit">+ Add project</button>
+                <div class = "profile">Alexey</div>
+                <div class = "modal">
                     <h3>Добавить новость</h3>
                     <form>
-                        <input  type="text" placeholder=" Введите">
-                        <button type="submit" value="Отправить">Отправить</button>
+                        <input type = "text" placeholder = "Заголовок">
+                        <button type = "submit" value = "Отправить">Отправить</button>
                     </form>
                 </div>
             </div>
         </div>
+        <button class = "main__header__nav__button" type = "submit">    <a href =
+            "/artside-site/auth/exit/">Выйти</a></button>
+
 
     </main>
 </div>

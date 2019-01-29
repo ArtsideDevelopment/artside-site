@@ -27,7 +27,7 @@ class RegistrationController {
         $data = compact("name", "email", "password", "auth_token");
         if (User::register($data)) {
 
-            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/blog/admin/", true, 302);
+            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/admin/view/", true, 302);
             exit();
         }
     }

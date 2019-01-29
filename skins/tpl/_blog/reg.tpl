@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class = "reg-body">
-            <form class = "reg-form form">
+            <form method="post" action="/artside-site/registration/register/" class = "reg-form form">
                 <span>Welcome, dear friend!</span>
                 <label class = "name">
                     <input name = "name" type = "text" placeholder = "Your name">

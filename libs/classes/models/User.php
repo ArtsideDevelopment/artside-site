@@ -36,7 +36,6 @@ class User {
         if (!self::isExists($email)) {
             $query = "insert into " . AS_DBPREFIX . "users (name, email, auth_token, password) 
             values ('$name', '$email', '$auth_token','$password')";
-
             try {
                 DB::mysqliQuery(AS_DATABASE, $query);
 
@@ -90,7 +89,6 @@ class User {
     public static function setToken($auth_token, $email) {
 
         $query = "update " . AS_DBPREFIX . "users set auth_token = '$auth_token' where email = '$email'";
-
         DB::mysqliQuery(AS_DATABASE, $query);
     }
 

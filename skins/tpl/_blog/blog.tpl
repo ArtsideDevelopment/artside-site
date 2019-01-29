@@ -8,11 +8,10 @@
 </head>
 <body>
 <div class = "wrap">
-    <a href="/artside-site/auth/view/" id="reg-btn" class="button">Авторизоваться</a>
+    <a href="/artside-site/admin/admin/" id="reg-btn" class="button">Админ</a>
     <main>
         <div class = "main__header">
             <div class = "main__header__nav">
-                <button class = "main__header__nav__button" type = "submit">Выйти</button>
                 <!--<img src = "../src/img/backgrounds/mess.png" alt = "mess">
                 <img src = "../src/img/backgrounds/notice.png" alt = "not">-->
                 <div class = "profile">Alexey</div>

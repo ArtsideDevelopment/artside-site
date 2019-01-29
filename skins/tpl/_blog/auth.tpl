@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class = "reg-body">
-            <form class = "auth-form form">
+            <form method="post" action="/artside-site/auth/auth/" class = "auth-form form">
                 <span>Welcome!</span>
                 <label class = "login">
                     <input name = "email" type = "text" placeholder = "email">
