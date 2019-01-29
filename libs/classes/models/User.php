@@ -35,11 +35,11 @@ class User {
         extract($data);
         if (!self::isExists($email)) {
             $query = "insert into " . AS_DBPREFIX . "users (name, email, auth_token, password) 
-        values ('$name', '$email', '$auth_token','$password')";
+            values ('$name', '$email', '$auth_token','$password')";
+
             try {
                 DB::mysqliQuery(AS_DATABASE, $query);
 
-                //TODO Удостовериться, что insert прошел успешно
                 return true;
             } catch (ExceptionDataBase $e) {
                 $e->getMessage();
@@ -47,7 +47,6 @@ class User {
                 return false;
             }
         }
-
     }
 
     /**
@@ -62,9 +61,7 @@ class User {
         $res = DB::mysqliQuery(AS_DATABASE, $query);
         $res = mysqli_fetch_assoc($res);
         if (isset($res)) {
-            if ($res["num_rows"] > 0) {
-                return true;
-            };
+            $res["email"] > 0 ? true : false;
         }
 
         return false;

@@ -23,32 +23,12 @@ class RegistrationController {
         $password = password_hash($password, PASSWORD_DEFAULT);
         $auth_token = gettimeofday()["sec"];
         $_SESSION["auth_token"] = $auth_token;
+        $_SESSION["user"] = $email;
         $data = compact("name", "email", "password", "auth_token");
         if (User::register($data)) {
-            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/blog/view/", true, 302);
+
+            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/blog/admin/", true, 302);
             exit();
         }
-
-
     }
-
-    /**
-     * Авторизация пользователя в базе
-     * @throws ExceptionDataBase
-     */
-    public function auth() {
-
-        $email = htmlspecialchars(trim($_POST["email"]));
-        $password = htmlspecialchars(trim($_POST["password"]));
-
-        if (password_verify($password, User::getPassword($email))) {
-            $auth_token = gettimeofday()["sec"];
-            User::setToken($auth_token, $email);
-            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/blog/view/", true, 302);
-            exit();
-        }
-
-
-    }
-
 }

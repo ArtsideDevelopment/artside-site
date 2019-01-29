@@ -9,5 +9,9 @@ class BlogController {
         Render::view("blog");
     }
 
+    public function admin() {
 
+        Render::view("admin");
+
+    }
 }

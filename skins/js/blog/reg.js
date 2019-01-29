@@ -40,7 +40,9 @@ function serializeForm(form) {
     return formData.join("&");
 }
 
-
+/**
+ * Функция собирает данные с регистрационной формы и отправляет их на сервер для добавления в базу данных.
+ */
 function register() {
     document.querySelector("#register").addEventListener("click", function (event) {
         event.preventDefault();

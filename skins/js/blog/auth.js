@@ -17,7 +17,7 @@ function auth() {
         let data = dataArr.join("&");
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/artside-site/registration/auth/", true);
+        xhr.open("POST", "/artside-site/auth/auth/", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onreadystatechange = function () {
 
