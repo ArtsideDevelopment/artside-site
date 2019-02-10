@@ -40,6 +40,7 @@
                 </div>
             </form>
         </div>
+        <div class="error"></div>
     </div>
 </div>
 <script src = "../../skins/js/blog/reg.js"></script>

@@ -8,6 +8,12 @@ class BlogController {
      */
     public function view() {
 
-        Render::view("blog");
+        $articles = Article::getArticles();
+
+
+        Render::view("blog", $articles);
     }
+
+
+
 }

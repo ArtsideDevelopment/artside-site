@@ -17,6 +17,8 @@ class RegistrationController {
      */
     public function register() {
 
+
+
         $name = htmlspecialchars(trim($_POST["name"]));
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));

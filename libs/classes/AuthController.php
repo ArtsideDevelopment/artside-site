@@ -26,6 +26,8 @@ class AuthController {
             $_SESSION["user"] = $email;
             header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/admin/view/", true, 302);
             exit();
+        } else{
+            echo "Неверный логин или пароль";
         }
     }
 

@@ -16,7 +16,14 @@
             <span>Mercury</span>
         </div>
         <ul>
-            <li><img src = "../../skins/img/backgrounds/home_logo.png" alt = "logo">Home</li>
+            <a
+                    href =
+                    "/artside-site/blog/view/">
+                <li><img
+                            src = "../../skins/img/backgrounds/home_logo.png" alt =
+                    "logo">Blog
+                </li>
+            </a>
         </ul>
     </aside>
     <main>
@@ -27,24 +34,27 @@
                 <span></span>
             </div>
             <div class = "main__header__nav">
-                <button class = "main__header__nav__button" type = "submit">+ Add project</button>
-                <div class = "profile">Alexey</div>
+                <button class = "main__header__nav__button" type = "submit">+ Добавить статью</button>
+                <div class = "profile">
+                    <div id = "user"><?= $data["user"]?></div>
+                </div>
                 <div class = "modal">
                     <h3>Добавить новость</h3>
-                    <form>
-                        <input type = "text" placeholder = "Заголовок">
-                        <button type = "submit" value = "Отправить">Отправить</button>
+                    <form id = "add-article-form">
+                        <input name = "title" type = "text" placeholder = "Заголовок">
+                        <input name = "content" type = "text" placeholder = "Текст">
+                        <button id = "add-article" type = "submit" value = "Отправить">Добавить статью</button>
                     </form>
                 </div>
             </div>
         </div>
-        <button class = "main__header__nav__button" type = "submit">    <a href =
-            "/artside-site/auth/exit/">Выйти</a></button>
-
-
+        <button class = "main__header__nav__button" type = "submit"><a
+                    href =
+                    "/artside-site/auth/exit/">Выйти</a></button>
     </main>
 </div>
 <script src = "../../skins/js/blog/btn_burger.js"></script>
+<script src = "../../skins/js/blog/admin.js"></script>
 <script src = "../../skins/js/blog/app.js"></script>
 <script src = "../../skins/js/blog/modal_window.js"></script>
 

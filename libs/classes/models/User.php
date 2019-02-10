@@ -59,9 +59,7 @@ class User {
         $query = "select email from " . AS_DBPREFIX . "users where email = '$email'";
         $res = DB::mysqliQuery(AS_DATABASE, $query);
         $res = mysqli_fetch_assoc($res);
-        if (isset($res)) {
-            $res["email"] > 0 ? true : false;
-        }
+        if (isset($res)) return true;
 
         return false;
     }

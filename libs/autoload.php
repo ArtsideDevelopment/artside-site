@@ -30,7 +30,9 @@ function autoloadClass($className) {
         'BlogController' => AS_ROOT . 'libs/classes/BlogController.php',
         'RegistrationController' => AS_ROOT . 'libs/classes/RegistrationController.php',
         'AdminController' => AS_ROOT . 'libs/classes/AdminController.php',
-        'User' => AS_ROOT . 'libs/classes/models/User.php'
+        'ArticleController' => AS_ROOT . 'libs/classes/ArticleController.php',
+        'User' => AS_ROOT . 'libs/classes/models/User.php',
+        'Article' => AS_ROOT . 'libs/classes/models/Article.php'
     );
     include $map[$className];
 }

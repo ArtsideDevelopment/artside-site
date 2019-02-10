@@ -11,7 +11,7 @@ class BlogRouter {
 
         session_start();
         switch ($_SERVER["QUERY_STRING"]) {
-            case "route=blog/admin/":
+            case "route=admin/view/":
                 if (AuthController::isAuthorized()) {
                     self::rout($query);
                 } else {
