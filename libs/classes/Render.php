@@ -7,7 +7,7 @@ class Render {
      * @param $view
      * @param array $data
      */
-    public static function view($view, $data = []) {
+    public static function view($view, $data) {
 
 
         if ($_SERVER["REQUEST_METHOD"] == "GET") {

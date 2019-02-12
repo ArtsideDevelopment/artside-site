@@ -50,7 +50,7 @@
         </div>
         <button class = "main__header__nav__button" type = "submit"><a
                     href =
-                    "/artside-site/auth/exit/">Выйти</a></button>
+                    "/auth/exit/">Выйти</a></button>
     </main>
 </div>
 <script src = "../../skins/js/blog/btn_burger.js"></script>

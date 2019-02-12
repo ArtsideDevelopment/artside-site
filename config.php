@@ -40,7 +40,7 @@ define('AS_HOST_CRM', 'http://artside-erp.u0096264.plsk.regruhosting.ru/');
 * Establishes a physical path to a root directory of a script 
 * Устанавливает физический путь до корневой директории скрипта 
 */
-define('AS_ROOT', str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']) ."/artside-site".'/');
+define('AS_ROOT', str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']) .'/' );
      
 /*----------------------------------------------------------- 
 *                   CONNECTION ADDITIONAL DB 

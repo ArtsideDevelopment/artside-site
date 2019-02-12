@@ -16,12 +16,12 @@
             <span>Mercury</span>
             <div class = "wrap-ul">
                 <ul>
-                    <li><a href = "/artside-site/registration/view/">Register</a></li>
+                    <li><a href = "/registration/view/">Register</a></li>
                 </ul>
             </div>
         </div>
         <div class = "reg-body">
-            <form method="post" action="/artside-site/auth/auth/" class = "auth-form form">
+            <form method="post" action="/auth/auth/" class = "auth-form form">
                 <span>Welcome!</span>
                 <label class = "login">
                     <input name = "email" type = "text" placeholder = "email">

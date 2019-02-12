@@ -36,7 +36,7 @@ class Article {
 
         $res = DB::mysqliQuery(AS_DATABASE, $query);
 
-        return mysqli_fetch_all($res);
+        return mysqli_fetch_assoc($res);
     }
 
 

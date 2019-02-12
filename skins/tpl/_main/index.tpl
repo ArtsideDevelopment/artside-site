@@ -12,6 +12,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
     <body>
         <div class="wrapper">
@@ -31,7 +32,7 @@
                     <div class="block-header">ПРОДУКЦИЯ</div>
                     <nav class="left-menu">
                         <a href="/catalog" class="button">Каталог товаров</a>
-                        <a href="artside-site/blog/view" class="button">BLOG</a>
+                        <a href="/blog/view" class="button">BLOG</a>
                         <? echo $PAGE->getLeftMenu();?>
         <!--
                         <ul>

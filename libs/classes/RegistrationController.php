@@ -23,7 +23,7 @@ class RegistrationController {
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $auth_token = gettimeofday()["sec"];
+        $auth_token = gettimeofday();
         $_SESSION["auth_token"] = $auth_token;
         $_SESSION["user"] = $email;
         $data = compact("name", "email", "password", "auth_token");

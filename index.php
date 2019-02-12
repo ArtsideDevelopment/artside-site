@@ -53,7 +53,7 @@
     require_once(AS_ROOT .'libs/xajax/xajax_for_all_func_inc.php');
     require_once(AS_ROOT .'libs/xajax/xajax_cart_func_inc.php');
     $xajax->processRequest();
-$xajax->configure('javascript URI',AS_HOST.'/artside-site/libs/xajax');
+$xajax->configure('javascript URI',AS_HOST.'/libs/xajax');
 
 $query = explode("/", $_SERVER["QUERY_STRING"]);
 if (count($query) > 1) {

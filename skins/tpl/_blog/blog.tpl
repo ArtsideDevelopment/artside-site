@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class = "wrap">
-    <a href = "/artside-site/admin/admin/" id = "reg-btn" class = "button">Админ</a>
+    <a href = "/admin/admin/" id = "reg-btn" class = "button">Админ</a>
     <main>
         <div class = "main__header">
             <div class = "main__header__nav">

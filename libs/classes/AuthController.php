@@ -7,8 +7,8 @@ class AuthController {
      * Функция отображения формы авторизации
      */
     public static function view() {
-
-        Render::view("auth");
+$data = "";
+        Render::view("auth", $data);
     }
 
     /**
@@ -20,7 +20,7 @@ class AuthController {
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));
         if (password_verify($password, User::getPassword($email))) {
-            $auth_token = gettimeofday()["sec"];
+            $auth_token = gettimeofday();
             User::setToken($auth_token, $email);
             $_SESSION["auth_token"] = $auth_token;
             $_SESSION["user"] = $email;
@@ -47,7 +47,7 @@ class AuthController {
     /**
      *Функция выхода пользователя из админ.панели
      */
-    public function exit() {
+    public function exitFunction() {
 
         unset($_SESSION["user"]);
         unset($_SESSION["auth_token"]);
