@@ -8,7 +8,8 @@ class AdminController {
      */
     public static function view() {
 
-//        $data = ["user" => $_SESSION["user"]];
+        $data = array();
+        $data ["user"] = $_SESSION["user"];
         Render::view("admin", $data);
     }
 

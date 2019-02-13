@@ -15,6 +15,7 @@ class Render {
             if (file_exists($view)) {
                 extract($data);
 
+
                 include $view;
             }
         }

@@ -8,7 +8,7 @@ class Article {
      * @param String $dataBase
      * @throws ExceptionDataBase
      */
-    public static function createArticleTable(String $dataBase) {
+    public static function createArticleTable() {
 
         $query = ("show tables like '" . AS_DBPREFIX . "articles'");
         $res = DB::mysqliQuery(AS_DATABASE, $query);
@@ -36,7 +36,13 @@ class Article {
 
         $res = DB::mysqliQuery(AS_DATABASE, $query);
 
-        return mysqli_fetch_assoc($res);
+        $data = array();
+        while ($row = mysqli_fetch_assoc($res)) {
+            $data[] = $row;
+        }
+
+        return $data;
+//        return mysqli_fetch_array($res, MYSQLI_ASSOC);
     }
 
 

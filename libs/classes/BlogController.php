@@ -10,7 +10,6 @@ class BlogController {
 
         $articles = Article::getArticles();
 
-
         Render::view("blog", $articles);
     }
 

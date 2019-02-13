@@ -74,8 +74,9 @@ class User {
 
         $query = "select password from " . AS_DBPREFIX . "users where email = '$email'";
         $res = DB::mysqliQuery(AS_DATABASE, $query);
+        $res = mysqli_fetch_assoc($res);
 
-        return mysqli_fetch_assoc($res)["password"];
+        return $res["password"];
     }
 
     /**

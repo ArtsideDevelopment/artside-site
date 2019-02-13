@@ -5,9 +5,11 @@ class AuthController {
 
     /**
      * Функция отображения формы авторизации
+     * @param $data
      */
     public static function view() {
-$data = "";
+        $data = array();
+
         Render::view("auth", $data);
     }
 
@@ -17,9 +19,13 @@ $data = "";
      */
     public function auth() {
 
+        Debug::dd(phpinfo());
+
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));
-        if (password_verify($password, User::getPassword($email))) {
+        if (
+
+            password_verify($password, User::getPassword($email))) {
             $auth_token = gettimeofday();
             User::setToken($auth_token, $email);
             $_SESSION["auth_token"] = $auth_token;

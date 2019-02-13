@@ -7,8 +7,9 @@ class RegistrationController {
      *Функция отображает регистрационную форму
      */
     public function view() {
+        $data = array();
 
-        Render::view("reg");
+        Render::view("reg", $data);
     }
 
     /**

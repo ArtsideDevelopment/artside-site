@@ -26,8 +26,8 @@
             <?php foreach ($data as $key => $value) {?>
             <div class = "post">
             <div class = "chart">
-            <h2><?php echo $value[1]; ?></h2>
-            <p><?php echo $value[2]; ?></p>
+            <h2><?php echo $value["title"]; ?></h2>
+            <p><?php echo $value["content"]; ?></p>
             </div>
             </div>
             <?php } ?>
