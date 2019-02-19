@@ -7,15 +7,16 @@ class ArticleController {
 
         return Article::getArticles();
     }
+
     public function add() {
 
-        $article = [
-            "title"=>$_POST["title"],
-            "content"=>$_POST["content"],
-            "user_id"=>1,
-        ];
+        $article = array(
+            "title" => $_POST["title"],
+            "content" => $_POST["content"],
+            "user_id" => 1,
+        );
 
 
-         Article::add($article);
+        Article::add($article);
     }
 }

@@ -23,14 +23,13 @@ class RegistrationController {
         $name = htmlspecialchars(trim($_POST["name"]));
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));
-        $password = password_hash($password, PASSWORD_DEFAULT);
+        $password = md5($password);
         $auth_token = gettimeofday();
         $_SESSION["auth_token"] = $auth_token;
         $_SESSION["user"] = $email;
         $data = compact("name", "email", "password", "auth_token");
         if (User::register($data)) {
-
-            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/admin/view/", true, 302);
+            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/admin/view/", true, 302);
             exit();
         }
     }

@@ -8,6 +8,7 @@ class AuthController {
      * @param $data
      */
     public static function view() {
+
         $data = array();
 
         Render::view("auth", $data);
@@ -19,20 +20,17 @@ class AuthController {
      */
     public function auth() {
 
-        Debug::dd(phpinfo());
 
         $email = htmlspecialchars(trim($_POST["email"]));
         $password = htmlspecialchars(trim($_POST["password"]));
-        if (
-
-            password_verify($password, User::getPassword($email))) {
+        if (md5($password) === User::getPassword($email)) {
             $auth_token = gettimeofday();
+            $auth_token = $auth_token["sec"];
             User::setToken($auth_token, $email);
             $_SESSION["auth_token"] = $auth_token;
             $_SESSION["user"] = $email;
-            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/artside-site/admin/view/", true, 302);
-            exit();
-        } else{
+            header("Location: http://" . $_SERVER['HTTP_HOST'] . "/admin/view/", true, 302);
+        } else {
             echo "Неверный логин или пароль";
         }
     }
@@ -53,10 +51,10 @@ class AuthController {
     /**
      *Функция выхода пользователя из админ.панели
      */
-    public function exitFunction() {
+    public function logout() {
 
         unset($_SESSION["user"]);
         unset($_SESSION["auth_token"]);
-        header("Location: http://" . $_SERVER["HTTP_HOST"] . "/artside-site/blog/view/", true, 302);
+        header("Location: http://" . $_SERVER["HTTP_HOST"] . "/blog/view/", true, 302);
     }
 }

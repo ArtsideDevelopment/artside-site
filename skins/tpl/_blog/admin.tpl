@@ -18,7 +18,7 @@
         <ul>
             <a
                     href =
-                    "/artside-site/blog/view/">
+                    "/blog/view/">
                 <li><img
                             src = "../../skins/img/backgrounds/home_logo.png" alt =
                     "logo">Blog
@@ -50,7 +50,7 @@
         </div>
         <button class = "main__header__nav__button" type = "submit"><a
                     href =
-                    "/auth/exit/">Выйти</a></button>
+                    "/auth/logout/">Выйти</a></button>
     </main>
 </div>
 <script src = "../../skins/js/blog/btn_burger.js"></script>

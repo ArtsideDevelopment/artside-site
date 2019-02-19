@@ -91,4 +91,14 @@ class User {
         DB::mysqliQuery(AS_DATABASE, $query);
     }
 
+
+    public static function getId($token) {
+
+        $query = "select id from " . AS_DBPREFIX . "users where  auth_token = '$token'";
+        $res = DB::mysqliQuery(AS_DATABASE, $query);
+        $res = mysqli_fetch_assoc($res);
+
+        return $res["id"];
+    }
+
 }

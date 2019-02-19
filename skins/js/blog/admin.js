@@ -49,7 +49,7 @@ function addArticle() {
         let data = serializeForm(form);
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/artside-site/article/add/", true);
+        xhr.open("POST", "/article/add/", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onreadystatechange = function () {
 

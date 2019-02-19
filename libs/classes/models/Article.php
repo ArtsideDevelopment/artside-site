@@ -50,12 +50,17 @@ class Article {
 
         $title = $article["title"];
         $content = $article["content"];
-        $user_id = 1;
+        $user_id = User::getId($_SESSION["auth_token"]);
+
 
         self::createArticleTable(AS_DATABASE);
 
         $query = "insert into " . AS_DBPREFIX . "articles(title, content, user_id) values('$title',
             '$content', '$user_id')";
+
+
+
+
         DB::mysqliQuery(AS_DATABASE, $query);
 
     }
