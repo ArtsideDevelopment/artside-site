@@ -4,35 +4,50 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <title>Blog</title>
-    <link rel = "stylesheet" href = "../../skins/css/blog/app.css">
+    <link rel = "stylesheet" href = "../../skins/css/blog/blog_news.css">
+
 </head>
 <body>
 <div class = "wrap">
-    <a href = "/admin/admin/" id = "reg-btn" class = "button">Админ</a>
     <main>
         <div class = "main__header">
             <div class = "main__header__nav">
-                <!--<img src = "../src/img/backgrounds/mess.png" alt = "mess">
-                <img src = "../src/img/backgrounds/notice.png" alt = "not">-->
-                <div class = "profile"></div>
+                <ul>
+                    <li><a href = "/admin/admin/" id = "reg-btn" class = "button">На главную</a></li>
+                    <li><a href = "/admin/admin/" id = "reg-btn" class = "button">Личный кабинет</a></li>
+                </ul>
             </div>
         </div>
         <div class = "main__body">
-            <div class = "tittle__blog">
-                <h2>Новости</h2>
+            <div class = "tittle-blog">
+                <h1>Новости</h1>
             </div>
-
-
+            <div class = "body-blog">
+                <div class = "body-blog__head">Hello,Blog!</div>
+                <div class = "container">
+                    <div class = "body-blog__pic">
+                        <img src = "../../skins/css/blog/photo.jpg">
+                    </div>
+                    <div class = "body-blog__news">
+                        <p>Пора сделать наш hello world более выразительным. Так как это может занять некоторое время,
+                            лучше
+                            переместить эти изменения в отдельную ветку, чтобы изолировать их от изменений в ветке
+                            master.</p>
+                    </div>
+                </div>
+            </div>
             <?php foreach ($data as $key => $value) {?>
             <div class = "post">
             <div class = "chart">
-            <h2><?php echo $value["title"]; ?></h2>
-            <p><?php echo $value["content"]; ?></p>
+            <div class="body-blog__head"><?php echo $value["title"]; ?></div>
+            <div class = "container">
+            <div class = "body-blog__pic">
+            <img src = "../../skins/css/blog/photo.jpg">
+            </div>
+            <div class="body-blog__news"><?php echo $value["content"]; ?></p>
             </div>
             </div>
             <?php } ?>
-
-
         </div>
     </main>
 </div>

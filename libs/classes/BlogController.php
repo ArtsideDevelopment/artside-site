@@ -13,6 +13,4 @@ class BlogController {
         Render::view("blog", $articles);
     }
 
-
-
 }

@@ -1,0 +1,112 @@
+body {
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "IBM Plex Serif",Arial,serif;
+    background-color: rgba(40, 55, 91, 0.25);
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.wrap {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+main {
+    /*padding: 0 10%;*/
+    width: 80%;
+}
+
+/****************main__header*****************/
+
+.main__header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    box-shadow: 0 1px 0 0 #93a1a1;
+
+}
+
+.main__header ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.7em;
+    position: relative;
+    z-index: 1;
+}
+
+.main__header ul li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    right: -10px;
+    bottom: 2px;
+    height: 10px;
+    background-color: rgba(40, 55, 91, 0.25);
+}
+
+.main__header ul li:hover {
+    opacity: 0.5;
+    transition: 0.4ms;
+}
+
+.main__header ul li a {
+    text-decoration: none;
+    color: rgba(12, 12, 12, 0.67);
+}
+
+/****************main__body*****************/
+
+.main__body h1 {
+    font-weight: bold;
+
+}
+
+.container{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+
+}
+
+.body-blog__head{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.body-blog__pic {
+    height: auto;
+}
+
+.body-blog__pic img {
+    width: 200px;
+    height: 250px;
+}
+
+.body-blog__news {
+    display: flex;
+    height: auto;
+    margin-left: 20px;
+
+}
+
+@media (max-width: 700px) {
+    main, .wrap{
+        width: 100%;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
